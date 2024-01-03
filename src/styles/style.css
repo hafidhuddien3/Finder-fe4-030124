@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: coral;
+  
+}
+
+main {
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+dish-list {
+  display: block;
+  width: 100%;
+  padding: 16px;
+}
+
+@media screen and (max-width: 1000px){
+  main {
+    flex-direction: column;    
+  }
+}
