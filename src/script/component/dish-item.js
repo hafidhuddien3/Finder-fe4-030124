@@ -75,11 +75,14 @@ class DishItem extends HTMLElement {
       <img class="fan-art-dish" src="${this._dish.strMealThumb}" alt="Fan Art">
       <div class="dish-info">
         <h2>${this._dish.strMeal}</h2>
-        <p>${this._dish.strInstructions}</p>
+        
+        <p>${this._dish.strArea + " " + this._dish.strCategory}</p>
+        ${this._dish.strTags==null?'':this._dish.strTags}
         <div class="yt-link">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-        <a href="${this._dish.strYoutube}" target="_blank" >link in youtube</a>
+        <a href="${this._dish.strYoutube}" target="_blank" >link in YouTube</a>
         <span></span>
-        <a href="https://www.youtube.com/results?search_query=${this._dish.strMeal}" target="_blank" >search in youtube</a>
+        <a href="https://www.youtube.com/results?search_query=${this._dish.strMeal}" 
+        target="_blank" >search in YouTube</a>
         </div>
       </div>
     `;
